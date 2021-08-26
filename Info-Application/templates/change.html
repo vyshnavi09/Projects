@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        input{
+            margin-left: 20px;
+        }
+
+        #email{
+            margin-left: 80px;
+        }
+
+        #editPage{
+            width: 50%;
+            height: 200px;
+        }
+    </style>
+<body>
+    <p><strong>Make changes in the article here</strong></p>
+    <form method="post" ng-app="myapp" name="frmEdit" action="">
+		<p>
+			<label for="name">Author Name</label>
+			<input type="text" id="name" name="Name" ng-model="authorName">
+		</p>
+		<p>
+			<label for="email">Email</label>
+			<input type="text" name="Email" id="email" ng-model="userEmail">
+		</p>
+		<p>
+			<label for="phone">Phone Number</label>
+			<input type="text" id="phone" name="PhoneNum" ng-model="PhNum">
+		</p>
+		<p>
+			<label for="subName">Subtitle Name</label>
+			<input type="text" id="subName" name="SubtitleName" ng-model="SubName">
+		</p>
+		<p>
+			<label for="changes">Type your changes here</label><br><br>
+			<textarea type="text" id="editPage" name="Changes" ng-model="pageChanges"></textarea>
+		</p>
+		<p><input type="submit" name="Submit" id="submit" value="Submit"></p>
+	</form>
+</body>
+</html>
