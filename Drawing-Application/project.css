@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+body{
+  text-align: center;
+  background-color: #d0e8f2;
+  align-items: center;
+  justify-content: center;
+  font-family: "poppins",sans-serif;
+}
+
+.Canvas{
+  padding: 0% 15% 0% 15%;
+  height: auto;
+}
+
+.save{
+  padding-left: 80%;
+  margin-bottom: 0px;
+}
+
+.navbar{
+  width: 100%;
+}
+
+.container-fluidd{
+  padding: 1% 15%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+p{
+  font-size: 1rem;
+  color: #8f8f8f;
+}
+
+canvas {
+  background-image: url('background.png');
+  border-radius: 25px;
+  border: 10px solid #456268;
+}
+
+.toolbox {
+  margin-top: 10px;
+  background-color: #456268;
+  border-radius: 10px;
+  margin: auto;
+  display: flex;
+  width: 500px;
+  height: 40px;
+}
+
+.btn-outline-dark{
+  background-color:#456268;
+  margin: 5px;
+  color: white;
+  margin-left: 10px;
+  border: none;
+}
+
+#size{
+  height: 25px;
+  margin-top: 5px;
+}
+
+#color{
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.btn-outline-danger{
+  margin-left: 255px;
+  background-color:#456268;
+  color: white;
+  border: none;
+}
+
+.main-footer{
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.btn-outline-success{
+  width: 70px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media(max-width:900px){
+  #canvas{
+    height: 200px;
+  }
+}

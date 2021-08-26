@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Drawing App</title>
+        <!-- Font Awesome -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+        <!-- Bootstrap CSS -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+
+  <link rel ="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project.css" />
+  <script src="project.js" defer></script>
+  <link rel="icon" href="favicon.ico?" >
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="">Drawing App</a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="about.html"><span class="glyphicon glyphicon-user"></span>About</a></li>
+            <li><a href="tel:555-555-5555"><span class="glyphicon glyphicon-log-in"></span> contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="Canvas" >
+    <canvas id="canvas" width="1000" height="400"></canvas>
+  </div>
+  <div class="save">
+      <button id="download" class="btn-outline-success">Save</button>
+  </div>
+
+  <div class="toolbox" >
+      <button id="decrease" class="btn-outline-dark">-</button>
+      <span id="size" class=" spann badge badge-pill badge-secondary">5</span>
+      <button id="increase" class="btn-outline-dark">+</button>
+      <input type="color" id="color" />
+      <button id="clear" class="btn-outline-danger">Clear</button>
+  </div>
+  <!-- Footer -->
+  <footer class="white-section" id="footer">
+    <div class="main-footer">
+      <a href="https://www.facebook.com/" target="_blank"><i class=" social-icon fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com/?lang=en" target="_blank"><i class="social-icon fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="social-icon fab fa-instagram"></i></a>
+      <p>© Copyright 2021 Vyshnavi</p>
+    </div>
+  </footer>
+</body>
+</html>
