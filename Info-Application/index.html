@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Navigation bar</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="mycss.css">
+</head>
+<body ng-app="myApp">
+    <header id="main-header">
+        <img src="Images/download.jpg" alt="Wiki" height="40px" width="40px">
+        <h1 class="head">Wiki Website</h1>
+        <h1 class="head" id="title">Mother Teresa</h1>
+    </header>
+    <nav id="navbar">
+        <ul id="list" class="navbar-nav">
+            <li><a href="#" onclick="myfunc1()">Home</a></li>
+            <!-- <li><a href="#!awards" onclick="myfunc2()">Awards</a></li> -->
+            <li class="dropdown">
+                <a href="#" class="dropbtn" onclick="myfunc2()">Awards</a>
+                  <div class="dropdown-content">
+                    <a href="#!peace" onclick="myfunc2()">Nobel Peace Award</a>
+                    <a href="#!others" onclick="myfunc2()">Others</a>
+                  </div>
+            </li>
+            <!-- <li><a href="#!Speech" onclick="myfunc2()">speech</a></li> -->
+            <li><a href="#!changes" onclick="myfunc2()">Make Changes</a></li>
+            <li><a href="#!upgrade" onclick="myfunc2()">Upgrade your Account</a></li>
+        </ul>
+    </nav>
+    <div class="interval" ng-controller="myController" style="text-align: right;">
+        <h3>{{counter}}</h3>
+    </div>
+    <div id="main-content">
+        <div class="sidebar">
+            <div class="timeout" ng-controller="myCtrl" style="margin: 0; text-align: center;">
+                <h4>{{myHeader}}</h4>
+            </div>
+            <img src="Images/Mother.jpg" alt="Mother Teresa Image" height=210px style="padding-left: 25px;">
+            <br><br>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Born</td>
+                        <td>26 August 1910 Skopje, Kosovo Vilayet, Ottoman Empire</td>
+                    </tr>
+                    <tr>
+                        <td>Died</td>
+                        <td>5 September 1997 (aged 87) Calcutta, West Bengal, India</td>
+                    </tr>
+                    <tr>
+                        <td>Institute</td>
+                        <td>
+                            Sister of Loreto(1928-1948)
+                            Missionaries of Charity(1950-1997)
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+        
+        <p>
+            <strong>Mother Mary Teresa Bojaxhiu[</strong> honoured in the Catholic Church as Saint Teresa of Calcutta,was an Albanian-Indian Roman Catholic nun and missionary.[8] She was born in Skopje (now the capital of North Macedonia), then part of the Kosovo Vilayet of the Ottoman Empire. After living in Skopje for eighteen years, she moved to Ireland and then to India, where she lived for most of her life.
+            <br>
+            <br>
+            Teresa received a number of honors, including the 1962 <em><strong>Ramon Magsaysay Peace Prize</strong></em> and the <em><strong>1979 Nobel Peace Prize</strong></em>. She was canonised on 4 September 2016, and the anniversary of her death (5 September) is her feast day. A controversial figure during her life and after her death, Teresa was admired by many for her charitable work. She was praised and criticized on various counts, such as for her views on abortion and contraception, and was criticized for poor conditions in her houses for the dying. Her authorized biography was written by Navin Chawla and published in 1992, and she has been the subject of films and other books. On 6 September 2017, Teresa and St. Francis Xavier were named co-patrons of the Roman Catholic Archdiocese of Calcutta.
+        </p>
+        <div class="box">
+            <h3>Contents</h3>
+            <ol>
+                <li><a href="#biography">Biography</a></li>
+                <ul>
+                    <li><a href="#early-life">Early Life</a></li><br>
+                    <li><a href="#missionaries-of-charity">Missionaries of Charity</a></li><br>
+                    <li><a href="#international-charity">International Charity</a></li><br>
+                </ul>
+                <li><a href="#recognation-and-reception">Recognation and Reception</a></li><br>
+                <li><a href="#criticism">Criticism</a></li>
+            </ol>
+        </div>
+        <br><br>
+        
+        <div class="clr"></div>
+
+        <h2 id="biography">Biography</h2>
+        <h3 id="early-life">Early Life</h3>
+        <p>
+            Teresa was born Anjezë Gonxhe (or Gonxha) Bojaxhiu Anjezë is a cognate of "Agnes"; Gonxhe means "rosebud" or "little flower" in Albanian) on 26 August 1910 into a Kosovar Albanian family in Skopje, Ottoman Empire (now the capital of North Macedonia).[14][15] She was baptised in Skopje, the day after her birth.She later considered 27 August, the day she was baptised, her "true birthday".
+        </p>
+        <h3 id="missionaries-of-charity">Missionaries of Charity</h3>
+        <p>
+            On 10 September 1946, Teresa experienced what she later described as "the call within the call" when she traveled by train to the Loreto convent in Darjeeling from Calcutta for her annual retreat. "I was to leave the convent and help the poor while living among them. It was an order. To fail would have been to break the faith."[38] Joseph Langford later wrote, "Though no one knew it at the time, Sister Teresa had just become Mother Teresa
+        </p>
+        <h3 id="international-charity">International Charity</h3>
+        <p>
+            Teresa said, "By blood, I am Albanian. By citizenship, an Indian. By faith, I am a Catholic nun. As to my calling, I belong to the world. As to my heart, I belong entirely to the Heart of Jesus."Fluent in five languages – Bengali, Albanian, Serbian, English and Hindi – she made occasional trips outside India for humanitarian reasons.
+        </p>
+
+        <h2 id="recognation-and-reception">Recognation and Reception</h2>
+        <p>
+            Teresa was first recognised by the Indian government more than a third of a century earlier, receiving the Padma Shri in 1962 and the Jawaharlal Nehru Award for International Understanding in 1969.She later received other Indian awards, including the Bharat Ratna (India's highest civilian award) in 1980.\Teresa's official biography, by Navin Chawla, was published in 1992.In Kolkata, she is worshipped as a deity by some Hindus.
+        </p>
+
+        <h2 id="Criticism">Criticism</h2>
+        <p>
+            According to a paper by Canadian academics Serge Larivée, Geneviève Chénard and Carole Sénéchal, Teresa's clinics received millions of dollars in donations but lacked medical care, systematic diagnosis, necessary nutrition and sufficient analgesics for those in pain;[118] in the opinion of the three academics, "Mother Teresa believed the sick must suffer like Christ on the cross".[119] It was said that the additional money might have transformed the health of the city's poor by creating advanced palliative care facilities
+        </p>
+        <br>
+        <p><strong>Click here to know your location</strong></p>
+        <button type="button" id="findme" style="width: 140px; text-align: center;" onclick="getLocation()">My Location</button><br/>
+        <div>
+            <p id="demo"></p>
+            <p id="coordinate"></p>
+            <p id="json"></p>
+        </div>
+        <script>
+            var x = document.getElementById("demo");
+        var x = document.getElementById("coordinate");
+        var y = document.getElementById("json");
+
+        function getLocation() {
+            if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+
+        function showPosition(position) {
+            x.innerHTML =
+            "Latitude: " +
+            position.coords.latitude +
+            "<br>Longitude: " +
+            position.coords.longitude;
+            var latitude = "latitude=" + position.coords.latitude;
+            var longitude = "&longitude=" + position.coords.longitude;
+            var query = latitude + longitude + "&localityLanguage=en";
+
+            const Http = new XMLHttpRequest();
+
+            var bigdatacloud_api =
+            "https://api.bigdatacloud.net/data/reverse-geocode-client?";
+
+            bigdatacloud_api += query;
+
+            Http.open("GET", bigdatacloud_api);
+            Http.send();
+
+            Http.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                var myObj = JSON.parse(this.responseText);
+                console.log(myObj);
+                y.innerHTML += "<br>City = " + myObj.locality + "<br>Country = " + myObj.countryName;
+            }
+            };
+        }
+        </script>
+    </div>
+
+    <script>
+        function myfunc2() {
+        document.getElementById("main-content").style.display = "none";
+      }
+      function myfunc1() {
+        document.getElementById("main-content").style.display = "block";
+      }
+    </script>
+    
+    <div class="content">
+        <div ng-view></div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
